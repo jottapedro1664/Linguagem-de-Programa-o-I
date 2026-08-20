@@ -1,5 +1,6 @@
 #include "TADLISTA.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 Lista *cria_lst(void){
     return NULL;
@@ -42,13 +43,13 @@ Lista *aux = cabeca_lst;
 
 while(aux != NULL){
   
-printf("##  ID DO PRODUTO %d##\n", aux->id);
+printf("\n  ID DO PRODUTO %d\n", aux->id);
 
-printf("## descriaoo do produto: %s##\n ", aux->nome);
+printf("\n Descriaoo do produto: %s\n ", aux->nome);
 
-printf("## estoque do produto: %f##\n", aux->estoque);
+printf("\nEstoque do produto: %.2f\n", aux->estoque);
 
-printf("##preço do produto: %f##\n", aux->preco);
+printf("\nPreco do produto: %.2f\n", aux->preco);
 
 aux = aux->prox;
 }
